@@ -22,7 +22,7 @@ class user{
         $this ->text = $text ;
         
         $this ->sql = $sql ;
-        $sql = mysqli_connect("localhost:3306", "root", "root","chat_bd");
+        $sql = mysqli_connect("https://chat-keke.herokuapp.com", "root", "root","chat_bd");
 
         if ($sql == false){
             echo("Ошибка: Невозможно подключиться к MySQL " . mysqli_connect_error());
